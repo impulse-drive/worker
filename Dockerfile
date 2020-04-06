@@ -1,8 +1,8 @@
-FROM alpine:latest
+FROM docker:stable-dind
 RUN apk --no-cache add nodejs yarn
 COPY . /app/
 WORKDIR /app/
 RUN yarn install
-ENTRYPOINT ["node", "/app/index.js"]
+ENTRYPOINT ["/app/entrypoint"]
 
 

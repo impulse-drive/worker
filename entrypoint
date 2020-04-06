@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+export CONTAINER_ID=$(cat /proc/self/cgroup | head -1 | awk -F/ '{print $NF}')
+echo CONTAINER_ID=${CONTAINER_ID}
+
+node /app/index.js "$@"

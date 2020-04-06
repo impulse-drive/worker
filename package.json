@@ -4,6 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "nats": "^1.4.8"
+    "compressing": "^1.5.0",
+    "minio": "^7.0.15",
+    "mkdirp": "^1.0.4",
+    "nats": "^1.4.8",
+    "path": "^0.12.7",
+    "pump": "^3.0.0",
+    "request": "^2.88.2"
   }
 }
